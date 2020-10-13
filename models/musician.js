@@ -24,7 +24,10 @@ class Musician {
     const keys = Object.keys(this.store);
     return keys.includes(id);
   }
-
+  // get list of musicians from storage new
+  getMusicians(id, callback) {
+    return callback(null, this.store);
+    
   // get list of musicians from storage
   getMusicians(id, callback) {
     return callback(null, this.store);
